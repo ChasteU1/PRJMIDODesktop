@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Clients>
+  <Client>
+    <IdClient>1</IdClient>
+    <Nom>CHEKIB</Nom>
+    <Prenom>Mohamed</Prenom>
+    <Email>mohamed.chekib@lunalogic.fr</Email>
+    <NomSociete>Lunalogic</NomSociete>
+    <CodeIban>FR87BARC20658244971655</CodeIban>
+  </Client>
+  <Client>
+    <IdClient>2</IdClient>
+    <Nom>XIE</Nom>
+    <Prenom>Ping</Prenom>
+    <Email>ping.xie@softeam.com</Email>
+    <NomSociete>Softeam</NomSociete>
+    <CodeIban>FR87BARC206589744971655</CodeIban>
+  </Client>
+  <Client>
+    <IdClient>3</IdClient>
+    <Nom>PERNET</Nom>
+    <Prenom>Olivier</Prenom>
+    <Email>opernet@orange.fr</Email>
+    <NomSociete>GIEP</NomSociete>
+    <CodeIban>FR87PREC206589744971521</CodeIban>
+  </Client>
+</Clients>

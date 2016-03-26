@@ -1,0 +1,31 @@
+﻿<?xml version="1.0"?>
+<Salaries>
+  <Salarie>
+    <Nom>DURAND</Nom>
+    <Prenom>Jean Philippe</Prenom>
+    <Email>jpdurand@autolocparis.com</Email>
+    <MotDePasse>123pass</MotDePasse>
+    <DateEmbauche>2010-11-20</DateEmbauche>
+  </Salarie>
+  <Salarie>
+    <Nom>SAIDI</Nom>
+    <Prenom>Isabelle</Prenom>
+    <Email>isaidi@autolocparis.com</Email>
+    <MotDePasse>456pass</MotDePasse>
+    <DateEmbauche>2008-06-20</DateEmbauche>
+  </Salarie>
+  <Salarie>
+    <Nom>LU</Nom>
+    <Prenom>Thomas</Prenom>
+    <Email>tlu@autolocparis.com</Email>
+    <MotDePasse>789pass</MotDePasse>
+    <DateEmbauche>2013-11-02</DateEmbauche>
+  </Salarie>
+  <Salarie>
+    <Nom>NGO</Nom>
+    <Prenom>Urielle</Prenom>
+    <Email>ungo@autolocparis.com</Email>
+    <MotDePasse>101pass</MotDePasse>
+    <DateEmbauche>2015-02-20</DateEmbauche>
+  </Salarie>
+</Salaries>
