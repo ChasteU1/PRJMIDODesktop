@@ -16,5 +16,10 @@ namespace GuiObjects.DesktopIHM
         {
             InitializeComponent();
         }
+
+        private void Modifier_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

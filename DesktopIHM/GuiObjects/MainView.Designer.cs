@@ -30,15 +30,22 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabClients = new System.Windows.Forms.TabPage();
+            this.eMailText = new System.Windows.Forms.TextBox();
+            this.LabelEmail = new System.Windows.Forms.Label();
+            this.prenomText = new System.Windows.Forms.TextBox();
+            this.LabelPrenom = new System.Windows.Forms.Label();
+            this.nomText = new System.Windows.Forms.TextBox();
+            this.LabelNom = new System.Windows.Forms.Label();
             this.tabContrats = new System.Windows.Forms.TabPage();
             this.tabVoitures = new System.Windows.Forms.TabPage();
             this.tabSalaries = new System.Windows.Forms.TabPage();
-            this.Nom = new System.Windows.Forms.Label();
-            this.NomText = new System.Windows.Forms.TextBox();
+            this.Ajouter = new System.Windows.Forms.Button();
+            this.Rechercher = new System.Windows.Forms.Button();
+            this.Modifier = new System.Windows.Forms.Button();
+            this.LabelSociete = new System.Windows.Forms.Label();
+            this.societeText = new System.Windows.Forms.TextBox();
+            this.labelRib = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.Prenom = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.AdresseMail = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabClients.SuspendLayout();
             this.SuspendLayout();
@@ -51,7 +58,7 @@
             this.tabControl1.Controls.Add(this.tabSalaries);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(7);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(2746, 1265);
@@ -59,27 +66,82 @@
             // 
             // tabClients
             // 
-            this.tabClients.Controls.Add(this.textBox2);
-            this.tabClients.Controls.Add(this.AdresseMail);
             this.tabClients.Controls.Add(this.textBox1);
-            this.tabClients.Controls.Add(this.Prenom);
-            this.tabClients.Controls.Add(this.NomText);
-            this.tabClients.Controls.Add(this.Nom);
+            this.tabClients.Controls.Add(this.labelRib);
+            this.tabClients.Controls.Add(this.societeText);
+            this.tabClients.Controls.Add(this.LabelSociete);
+            this.tabClients.Controls.Add(this.Modifier);
+            this.tabClients.Controls.Add(this.Rechercher);
+            this.tabClients.Controls.Add(this.Ajouter);
+            this.tabClients.Controls.Add(this.eMailText);
+            this.tabClients.Controls.Add(this.LabelEmail);
+            this.tabClients.Controls.Add(this.prenomText);
+            this.tabClients.Controls.Add(this.LabelPrenom);
+            this.tabClients.Controls.Add(this.nomText);
+            this.tabClients.Controls.Add(this.LabelNom);
             this.tabClients.Location = new System.Drawing.Point(12, 58);
-            this.tabClients.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.tabClients.Margin = new System.Windows.Forms.Padding(7);
             this.tabClients.Name = "tabClients";
-            this.tabClients.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.tabClients.Padding = new System.Windows.Forms.Padding(7);
             this.tabClients.Size = new System.Drawing.Size(2722, 1195);
             this.tabClients.TabIndex = 0;
             this.tabClients.Text = "Gestions Clients";
             this.tabClients.UseVisualStyleBackColor = true;
             // 
+            // eMailText
+            // 
+            this.eMailText.Location = new System.Drawing.Point(828, 285);
+            this.eMailText.Name = "eMailText";
+            this.eMailText.Size = new System.Drawing.Size(459, 44);
+            this.eMailText.TabIndex = 5;
+            // 
+            // LabelEmail
+            // 
+            this.LabelEmail.AutoSize = true;
+            this.LabelEmail.Location = new System.Drawing.Point(821, 183);
+            this.LabelEmail.Name = "LabelEmail";
+            this.LabelEmail.Size = new System.Drawing.Size(97, 37);
+            this.LabelEmail.TabIndex = 4;
+            this.LabelEmail.Text = "Email";
+            // 
+            // prenomText
+            // 
+            this.prenomText.Location = new System.Drawing.Point(423, 285);
+            this.prenomText.Name = "prenomText";
+            this.prenomText.Size = new System.Drawing.Size(379, 44);
+            this.prenomText.TabIndex = 3;
+            // 
+            // LabelPrenom
+            // 
+            this.LabelPrenom.AutoSize = true;
+            this.LabelPrenom.Location = new System.Drawing.Point(416, 183);
+            this.LabelPrenom.Name = "LabelPrenom";
+            this.LabelPrenom.Size = new System.Drawing.Size(129, 37);
+            this.LabelPrenom.TabIndex = 2;
+            this.LabelPrenom.Text = "Prenom";
+            // 
+            // nomText
+            // 
+            this.nomText.Location = new System.Drawing.Point(41, 285);
+            this.nomText.Name = "nomText";
+            this.nomText.Size = new System.Drawing.Size(361, 44);
+            this.nomText.TabIndex = 1;
+            // 
+            // LabelNom
+            // 
+            this.LabelNom.AutoSize = true;
+            this.LabelNom.Location = new System.Drawing.Point(34, 183);
+            this.LabelNom.Name = "LabelNom";
+            this.LabelNom.Size = new System.Drawing.Size(86, 37);
+            this.LabelNom.TabIndex = 0;
+            this.LabelNom.Text = "Nom";
+            // 
             // tabContrats
             // 
             this.tabContrats.Location = new System.Drawing.Point(12, 58);
-            this.tabContrats.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.tabContrats.Margin = new System.Windows.Forms.Padding(7);
             this.tabContrats.Name = "tabContrats";
-            this.tabContrats.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.tabContrats.Padding = new System.Windows.Forms.Padding(7);
             this.tabContrats.Size = new System.Drawing.Size(2722, 1195);
             this.tabContrats.TabIndex = 1;
             this.tabContrats.Text = "Gestion Contrats";
@@ -88,7 +150,7 @@
             // tabVoitures
             // 
             this.tabVoitures.Location = new System.Drawing.Point(12, 58);
-            this.tabVoitures.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.tabVoitures.Margin = new System.Windows.Forms.Padding(7);
             this.tabVoitures.Name = "tabVoitures";
             this.tabVoitures.Size = new System.Drawing.Size(2722, 1195);
             this.tabVoitures.TabIndex = 2;
@@ -98,60 +160,71 @@
             // tabSalaries
             // 
             this.tabSalaries.Location = new System.Drawing.Point(12, 58);
-            this.tabSalaries.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.tabSalaries.Margin = new System.Windows.Forms.Padding(7);
             this.tabSalaries.Name = "tabSalaries";
             this.tabSalaries.Size = new System.Drawing.Size(2722, 1195);
             this.tabSalaries.TabIndex = 3;
             this.tabSalaries.Text = "Gestion Salariés";
             this.tabSalaries.UseVisualStyleBackColor = true;
             // 
-            // Nom
+            // Ajouter
             // 
-            this.Nom.AutoSize = true;
-            this.Nom.Location = new System.Drawing.Point(180, 66);
-            this.Nom.Name = "Nom";
-            this.Nom.Size = new System.Drawing.Size(86, 37);
-            this.Nom.TabIndex = 0;
-            this.Nom.Text = "Nom";
+            this.Ajouter.Location = new System.Drawing.Point(41, 40);
+            this.Ajouter.Name = "Ajouter";
+            this.Ajouter.Size = new System.Drawing.Size(299, 75);
+            this.Ajouter.TabIndex = 6;
+            this.Ajouter.Text = "Ajouter";
+            this.Ajouter.UseVisualStyleBackColor = true;
             // 
-            // NomText
+            // Rechercher
             // 
-            this.NomText.Location = new System.Drawing.Point(354, 59);
-            this.NomText.Name = "NomText";
-            this.NomText.Size = new System.Drawing.Size(100, 44);
-            this.NomText.TabIndex = 1;
+            this.Rechercher.Location = new System.Drawing.Point(744, 40);
+            this.Rechercher.Name = "Rechercher";
+            this.Rechercher.Size = new System.Drawing.Size(304, 75);
+            this.Rechercher.TabIndex = 7;
+            this.Rechercher.Text = "Rechercher";
+            this.Rechercher.UseVisualStyleBackColor = true;
+            // 
+            // Modifier
+            // 
+            this.Modifier.Location = new System.Drawing.Point(1485, 40);
+            this.Modifier.Name = "Modifier";
+            this.Modifier.Size = new System.Drawing.Size(319, 75);
+            this.Modifier.TabIndex = 8;
+            this.Modifier.Text = "Modifier";
+            this.Modifier.UseVisualStyleBackColor = true;
+            // 
+            // LabelSociete
+            // 
+            this.LabelSociete.AutoSize = true;
+            this.LabelSociete.Location = new System.Drawing.Point(1296, 183);
+            this.LabelSociete.Name = "LabelSociete";
+            this.LabelSociete.Size = new System.Drawing.Size(122, 37);
+            this.LabelSociete.TabIndex = 9;
+            this.LabelSociete.Text = "Societe";
+            // 
+            // societeText
+            // 
+            this.societeText.Location = new System.Drawing.Point(1303, 285);
+            this.societeText.Name = "societeText";
+            this.societeText.Size = new System.Drawing.Size(361, 44);
+            this.societeText.TabIndex = 10;
+            // 
+            // labelRib
+            // 
+            this.labelRib.AutoSize = true;
+            this.labelRib.Location = new System.Drawing.Point(1669, 183);
+            this.labelRib.Name = "labelRib";
+            this.labelRib.Size = new System.Drawing.Size(68, 37);
+            this.labelRib.TabIndex = 11;
+            this.labelRib.Text = "RIB";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(769, 66);
+            this.textBox1.Location = new System.Drawing.Point(1676, 285);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 44);
-            this.textBox1.TabIndex = 3;
-            // 
-            // Prenom
-            // 
-            this.Prenom.AutoSize = true;
-            this.Prenom.Location = new System.Drawing.Point(595, 73);
-            this.Prenom.Name = "Prenom";
-            this.Prenom.Size = new System.Drawing.Size(129, 37);
-            this.Prenom.TabIndex = 2;
-            this.Prenom.Text = "Prenom";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(1296, 66);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(459, 44);
-            this.textBox2.TabIndex = 5;
-            // 
-            // AdresseMail
-            // 
-            this.AdresseMail.AutoSize = true;
-            this.AdresseMail.Location = new System.Drawing.Point(1042, 73);
-            this.AdresseMail.Name = "AdresseMail";
-            this.AdresseMail.Size = new System.Drawing.Size(192, 37);
-            this.AdresseMail.TabIndex = 4;
-            this.AdresseMail.Text = "AdresseMail";
+            this.textBox1.Size = new System.Drawing.Size(280, 44);
+            this.textBox1.TabIndex = 12;
             // 
             // MainView
             // 
@@ -159,7 +232,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2746, 1265);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "MainView";
             this.Text = "AutoLocParis Manager";
             this.tabControl1.ResumeLayout(false);
@@ -176,12 +249,19 @@
         private System.Windows.Forms.TabPage tabContrats;
         private System.Windows.Forms.TabPage tabVoitures;
         private System.Windows.Forms.TabPage tabSalaries;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label AdresseMail;
+        private System.Windows.Forms.TextBox eMailText;
+        private System.Windows.Forms.Label LabelEmail;
+        private System.Windows.Forms.TextBox prenomText;
+        private System.Windows.Forms.Label LabelPrenom;
+        private System.Windows.Forms.TextBox nomText;
+        private System.Windows.Forms.Label LabelNom;
+        private System.Windows.Forms.Button Rechercher;
+        private System.Windows.Forms.Button Ajouter;
+        private System.Windows.Forms.Button Modifier;
+        private System.Windows.Forms.TextBox societeText;
+        private System.Windows.Forms.Label LabelSociete;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label Prenom;
-        private System.Windows.Forms.TextBox NomText;
-        private System.Windows.Forms.Label Nom;
+        private System.Windows.Forms.Label labelRib;
     }
 }
 
