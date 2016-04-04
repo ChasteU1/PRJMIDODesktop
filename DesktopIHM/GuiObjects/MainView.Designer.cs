@@ -59,7 +59,6 @@
             this.RechercherVoiture = new System.Windows.Forms.Button();
             this.immatriculationRechercheLabel = new System.Windows.Forms.Label();
             this.immatriculationRechercheText = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.AjouterSalarie = new System.Windows.Forms.Button();
             this.salarieEmailText = new System.Windows.Forms.TextBox();
             this.salarieEmailLabel = new System.Windows.Forms.Label();
@@ -67,6 +66,10 @@
             this.slariePrenomLabel = new System.Windows.Forms.Label();
             this.salarieNomText = new System.Windows.Forms.TextBox();
             this.salarieNomLabel = new System.Windows.Forms.Label();
+            this.salarieRechercheGroup = new System.Windows.Forms.GroupBox();
+            this.RechercherSalarie = new System.Windows.Forms.Button();
+            this.salarieNomRechercheLabel = new System.Windows.Forms.Label();
+            this.salarieNomRechercheText = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabClients.SuspendLayout();
             this.tabContrats.SuspendLayout();
@@ -74,6 +77,7 @@
             this.tabVoitures.SuspendLayout();
             this.tabSalaries.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.salarieRechercheGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -251,9 +255,9 @@
             // RechercherContrat
             // 
             this.RechercherContrat.Image = ((System.Drawing.Image)(resources.GetObject("RechercherContrat.Image")));
-            this.RechercherContrat.Location = new System.Drawing.Point(1037, 78);
+            this.RechercherContrat.Location = new System.Drawing.Point(1037, 65);
             this.RechercherContrat.Name = "RechercherContrat";
-            this.RechercherContrat.Size = new System.Drawing.Size(161, 125);
+            this.RechercherContrat.Size = new System.Drawing.Size(161, 108);
             this.RechercherContrat.TabIndex = 7;
             this.RechercherContrat.UseVisualStyleBackColor = true;
             // 
@@ -312,7 +316,7 @@
             // 
             // tabSalaries
             // 
-            this.tabSalaries.Controls.Add(this.button1);
+            this.tabSalaries.Controls.Add(this.salarieRechercheGroup);
             this.tabSalaries.Controls.Add(this.AjouterSalarie);
             this.tabSalaries.Controls.Add(this.salarieEmailText);
             this.tabSalaries.Controls.Add(this.salarieEmailLabel);
@@ -374,15 +378,6 @@
             this.immatriculationRechercheText.Size = new System.Drawing.Size(472, 44);
             this.immatriculationRechercheText.TabIndex = 3;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(754, 34);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(304, 75);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Rechercher Client";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // AjouterSalarie
             // 
             this.AjouterSalarie.Location = new System.Drawing.Point(51, 34);
@@ -394,7 +389,7 @@
             // 
             // salarieEmailText
             // 
-            this.salarieEmailText.Location = new System.Drawing.Point(838, 279);
+            this.salarieEmailText.Location = new System.Drawing.Point(838, 391);
             this.salarieEmailText.Name = "salarieEmailText";
             this.salarieEmailText.Size = new System.Drawing.Size(459, 44);
             this.salarieEmailText.TabIndex = 13;
@@ -402,7 +397,7 @@
             // salarieEmailLabel
             // 
             this.salarieEmailLabel.AutoSize = true;
-            this.salarieEmailLabel.Location = new System.Drawing.Point(831, 177);
+            this.salarieEmailLabel.Location = new System.Drawing.Point(831, 289);
             this.salarieEmailLabel.Name = "salarieEmailLabel";
             this.salarieEmailLabel.Size = new System.Drawing.Size(97, 37);
             this.salarieEmailLabel.TabIndex = 12;
@@ -410,7 +405,7 @@
             // 
             // salariePrenomText
             // 
-            this.salariePrenomText.Location = new System.Drawing.Point(433, 279);
+            this.salariePrenomText.Location = new System.Drawing.Point(433, 391);
             this.salariePrenomText.Name = "salariePrenomText";
             this.salariePrenomText.Size = new System.Drawing.Size(379, 44);
             this.salariePrenomText.TabIndex = 11;
@@ -418,7 +413,7 @@
             // slariePrenomLabel
             // 
             this.slariePrenomLabel.AutoSize = true;
-            this.slariePrenomLabel.Location = new System.Drawing.Point(426, 177);
+            this.slariePrenomLabel.Location = new System.Drawing.Point(426, 289);
             this.slariePrenomLabel.Name = "slariePrenomLabel";
             this.slariePrenomLabel.Size = new System.Drawing.Size(129, 37);
             this.slariePrenomLabel.TabIndex = 10;
@@ -426,7 +421,7 @@
             // 
             // salarieNomText
             // 
-            this.salarieNomText.Location = new System.Drawing.Point(51, 279);
+            this.salarieNomText.Location = new System.Drawing.Point(51, 391);
             this.salarieNomText.Name = "salarieNomText";
             this.salarieNomText.Size = new System.Drawing.Size(361, 44);
             this.salarieNomText.TabIndex = 9;
@@ -434,11 +429,48 @@
             // salarieNomLabel
             // 
             this.salarieNomLabel.AutoSize = true;
-            this.salarieNomLabel.Location = new System.Drawing.Point(44, 177);
+            this.salarieNomLabel.Location = new System.Drawing.Point(44, 289);
             this.salarieNomLabel.Name = "salarieNomLabel";
             this.salarieNomLabel.Size = new System.Drawing.Size(86, 37);
             this.salarieNomLabel.TabIndex = 8;
             this.salarieNomLabel.Text = "Nom";
+            // 
+            // salarieRechercheGroup
+            // 
+            this.salarieRechercheGroup.Controls.Add(this.RechercherSalarie);
+            this.salarieRechercheGroup.Controls.Add(this.salarieNomRechercheLabel);
+            this.salarieRechercheGroup.Controls.Add(this.salarieNomRechercheText);
+            this.salarieRechercheGroup.Location = new System.Drawing.Point(883, 34);
+            this.salarieRechercheGroup.Name = "salarieRechercheGroup";
+            this.salarieRechercheGroup.Size = new System.Drawing.Size(1019, 231);
+            this.salarieRechercheGroup.TabIndex = 15;
+            this.salarieRechercheGroup.TabStop = false;
+            this.salarieRechercheGroup.Text = "Rechercher Salarié";
+            // 
+            // RechercherSalarie
+            // 
+            this.RechercherSalarie.Image = ((System.Drawing.Image)(resources.GetObject("RechercherSalarie.Image")));
+            this.RechercherSalarie.Location = new System.Drawing.Point(838, 65);
+            this.RechercherSalarie.Name = "RechercherSalarie";
+            this.RechercherSalarie.Size = new System.Drawing.Size(161, 125);
+            this.RechercherSalarie.TabIndex = 7;
+            this.RechercherSalarie.UseVisualStyleBackColor = true;
+            // 
+            // salarieNomRechercheLabel
+            // 
+            this.salarieNomRechercheLabel.AutoSize = true;
+            this.salarieNomRechercheLabel.Location = new System.Drawing.Point(20, 65);
+            this.salarieNomRechercheLabel.Name = "salarieNomRechercheLabel";
+            this.salarieNomRechercheLabel.Size = new System.Drawing.Size(86, 37);
+            this.salarieNomRechercheLabel.TabIndex = 5;
+            this.salarieNomRechercheLabel.Text = "Nom";
+            // 
+            // salarieNomRechercheText
+            // 
+            this.salarieNomRechercheText.Location = new System.Drawing.Point(27, 119);
+            this.salarieNomRechercheText.Name = "salarieNomRechercheText";
+            this.salarieNomRechercheText.Size = new System.Drawing.Size(472, 44);
+            this.salarieNomRechercheText.TabIndex = 3;
             // 
             // MainView
             // 
@@ -460,6 +492,8 @@
             this.tabSalaries.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.salarieRechercheGroup.ResumeLayout(false);
+            this.salarieRechercheGroup.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -496,7 +530,6 @@
         private System.Windows.Forms.Button RechercherVoiture;
         private System.Windows.Forms.Label immatriculationRechercheLabel;
         private System.Windows.Forms.TextBox immatriculationRechercheText;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button AjouterSalarie;
         private System.Windows.Forms.TextBox salarieEmailText;
         private System.Windows.Forms.Label salarieEmailLabel;
@@ -504,6 +537,10 @@
         private System.Windows.Forms.Label slariePrenomLabel;
         private System.Windows.Forms.TextBox salarieNomText;
         private System.Windows.Forms.Label salarieNomLabel;
+        private System.Windows.Forms.GroupBox salarieRechercheGroup;
+        private System.Windows.Forms.Button RechercherSalarie;
+        private System.Windows.Forms.Label salarieNomRechercheLabel;
+        private System.Windows.Forms.TextBox salarieNomRechercheText;
     }
 }
 
