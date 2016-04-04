@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0"?>
 <Salaries>
   <Salarie>
+    <IdSalarie>1</IdSalarie>
     <Nom>DURAND</Nom>
     <Prenom>Jean Philippe</Prenom>
     <Email>jpdurand@autolocparis.com</Email>
@@ -8,6 +9,7 @@
     <DateEmbauche>2010-11-20</DateEmbauche>
   </Salarie>
   <Salarie>
+    <IdSalarie>2</IdSalarie>
     <Nom>SAIDI</Nom>
     <Prenom>Isabelle</Prenom>
     <Email>isaidi@autolocparis.com</Email>
@@ -15,6 +17,7 @@
     <DateEmbauche>2008-06-20</DateEmbauche>
   </Salarie>
   <Salarie>
+    <IdSalarie>3</IdSalarie>
     <Nom>LU</Nom>
     <Prenom>Thomas</Prenom>
     <Email>tlu@autolocparis.com</Email>
@@ -22,6 +25,7 @@
     <DateEmbauche>2013-11-02</DateEmbauche>
   </Salarie>
   <Salarie>
+    <IdSalarie>4</IdSalarie>
     <Nom>NGO</Nom>
     <Prenom>Urielle</Prenom>
     <Email>ungo@autolocparis.com</Email>

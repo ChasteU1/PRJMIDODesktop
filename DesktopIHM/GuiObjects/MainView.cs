@@ -1,4 +1,7 @@
-﻿using System;
+﻿using DataService.BSService.BSServiceInt;
+using DataService.DAOService;
+using DataService.DataObjects;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Practices.Unity;
 
 namespace GuiObjects.DesktopIHM
 {
@@ -14,12 +18,18 @@ namespace GuiObjects.DesktopIHM
     {
         public MainView()
         {
+            InitUnityContainer();
             InitializeComponent();
+            //DaoBase<Salarie> dao = new SalarieDao();
+            //dao.SelectAll();
+            IService<Salarie> SalarieService = myContainer.Resolve<IService<Salarie>>();
+            var lst = SalarieService.SelectAll();
         }
 
-        private void Modifier_Click(object sender, EventArgs e)
+        private void MainView_Load(object sender, EventArgs e)
         {
-
+           
+            
         }
     }
 }
