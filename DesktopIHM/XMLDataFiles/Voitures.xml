@@ -1,0 +1,13 @@
+﻿<?xml version="1.0"?>
+<Voitures>
+  <Voiture>
+    <Immatriculation>BX-302-JH</Immatriculation>
+    <Marque>Ford</Marque>
+    <Modele>Fiesta</Modele>
+    <Kilometrage>5456</Kilometrage>
+    <Couleur>Gris</Couleur>
+    <Carburant>Diesel</Carburant>
+    <Photo>Images/voiture1</Photo>
+    <DateFutureCT>Gris</DateFutureCT>
+  </Voiture>
+</Voitures>
