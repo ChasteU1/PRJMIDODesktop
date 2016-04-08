@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<Contrats>
+  <Contrat>
+    <IdClient>1</IdClient>
+    <NumContrat>1210012</NumContrat>
+    <DateDebut>01/01/2016 00:00:00</DateDebut>
+    <DateFin>30/01/2016 00:00:00</DateFin>
+    <Tarif>1000</Tarif>
+    <Immatriculation>BX-302-JH</Immatriculation>
+    <DateRetour />
+  </Contrat>
+  <Contrat>
+    <IdClient>1</IdClient>
+    <NumContrat>2</NumContrat>
+    <DateDebut>08/04/2016 00:00:00</DateDebut>
+    <DateFin>15/04/2016 00:00:00</DateFin>
+    <Tarif>1500</Tarif>
+    <Immatriculation>BX-302-JH</Immatriculation>
+    <DateRetour />
+  </Contrat>
+</Contrats>

@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" standalone="yes"?>
 <Clients>
   <Client>
     <IdClient>1</IdClient>
     <Nom>CHEKIB</Nom>
-    <Prenom>Mohamed</Prenom>
+    <Prenom>mohamed</Prenom>
     <Email>mohamed.chekib@lunalogic.fr</Email>
     <NomSociete>Lunalogic</NomSociete>
     <CodeIban>FR87BARC20658244971655</CodeIban>
@@ -23,5 +23,37 @@
     <Email>opernet@orange.fr</Email>
     <NomSociete>GIEP</NomSociete>
     <CodeIban>FR87PREC206589744971521</CodeIban>
+  </Client>
+  <Client>
+    <IdClient>4</IdClient>
+    <Nom>errayhani</Nom>
+    <Prenom>mohamed</Prenom>
+    <Email>moha@gmail.com</Email>
+    <NomSociete>soc</NomSociete>
+    <CodeIban>ibandfsqds</CodeIban>
+  </Client>
+  <Client>
+    <IdClient>5</IdClient>
+    <Nom>M3izo</Nom>
+    <Prenom>M3iza</Prenom>
+    <Email>email@email.com</Email>
+    <NomSociete>Soc</NomSociete>
+    <CodeIban>idab ibda</CodeIban>
+  </Client>
+  <Client>
+    <IdClient>6</IdClient>
+    <Nom>Umuhoza</Nom>
+    <Prenom>Chaste</Prenom>
+    <Email>a@b.com</Email>
+    <NomSociete>SOS</NomSociete>
+    <CodeIban>IBAN</CodeIban>
+  </Client>
+  <Client>
+    <IdClient>7</IdClient>
+    <Nom>testNom</Nom>
+    <Prenom>testPrenom</Prenom>
+    <Email>test@emai.com</Email>
+    <NomSociete>sosiete</NomSociete>
+    <CodeIban>Iban</CodeIban>
   </Client>
 </Clients>

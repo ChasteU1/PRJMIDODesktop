@@ -30,7 +30,7 @@ namespace GuiObjects.DesktopIHM
 
         private void MainView_Load(object sender, EventArgs e)
         {
-            //base.OnLoad(e);
+           
             /// Data binding pour la vue "Clients"
             rechercheClientText.DataBindings.Add("Text", _clientPresenter, "RechercheString");
             nomClientText.DataBindings.Add("Text", _clientPresenter, "Nom");
@@ -522,6 +522,8 @@ namespace GuiObjects.DesktopIHM
         private void getAlerts()
         {
             // initialiser les alertes
+            _contratPresenter.getAllAlertedContrat();
+            _voiturePresenter.getAllAlertedVoiture();
             int nbrAllert = _contratPresenter.AllAlertedContrats.Count() + _voiturePresenter.AllAlertedVoitures.Count();
             if (nbrAllert > 0)
             {
@@ -537,7 +539,7 @@ namespace GuiObjects.DesktopIHM
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            timer1.Interval = 300000; // le 1er appel apres 5 second du chargement puis on fixe l'intervale a 5min
+            timer1.Interval = 600000; // le 1er appel apres 5 second du chargement puis on fixe l'intervale a 10min
             getAlerts();
         }
     }

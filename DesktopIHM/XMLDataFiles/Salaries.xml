@@ -1,20 +1,20 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0" standalone="yes"?>
 <Salaries>
   <Salarie>
     <IdSalarie>1</IdSalarie>
-    <Nom>DURAND</Nom>
+    <Nom>DURANDD</Nom>
     <Prenom>Jean Philippe</Prenom>
     <Email>jpdurand@autolocparis.com</Email>
-    <MotDePasse>123pass</MotDePasse>
-    <DateEmbauche>2010-11-20</DateEmbauche>
+    <MotDePasse>123456</MotDePasse>
+    <DateEmbauche>20/11/2010 00:00:00</DateEmbauche>
   </Salarie>
   <Salarie>
     <IdSalarie>2</IdSalarie>
-    <Nom>SAIDI</Nom>
+    <Nom>SAIDII</Nom>
     <Prenom>Isabelle</Prenom>
     <Email>isaidi@autolocparis.com</Email>
     <MotDePasse>456pass</MotDePasse>
-    <DateEmbauche>2008-06-20</DateEmbauche>
+    <DateEmbauche>20/06/2008 00:00:00</DateEmbauche>
   </Salarie>
   <Salarie>
     <IdSalarie>3</IdSalarie>
@@ -31,5 +31,13 @@
     <Email>ungo@autolocparis.com</Email>
     <MotDePasse>101pass</MotDePasse>
     <DateEmbauche>2015-02-20</DateEmbauche>
+  </Salarie>
+  <Salarie>
+    <IdSalarie>5</IdSalarie>
+    <Nom>test2</Nom>
+    <Prenom>test</Prenom>
+    <Email>a@b.c</Email>
+    <MotDePasse>123456</MotDePasse>
+    <DateEmbauche>23/02/2011 00:00:00</DateEmbauche>
   </Salarie>
 </Salaries>

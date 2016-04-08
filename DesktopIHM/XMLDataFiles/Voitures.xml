@@ -1,13 +1,53 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0" standalone="yes"?>
 <Voitures>
   <Voiture>
     <Immatriculation>BX-302-JH</Immatriculation>
     <Marque>Ford</Marque>
-    <Modele>Fiesta</Modele>
+    <Modele>Fiestaa</Modele>
     <Kilometrage>5456</Kilometrage>
     <Couleur>Gris</Couleur>
     <Carburant>Diesel</Carburant>
-    <Photo>Images/voiture1</Photo>
-    <DateFutureCT>Gris</DateFutureCT>
+    <Photo>voiture1_BX-302-JH86d17d82-fcd9-47a1-be65-601c3f03f12a_BX-302-JHe9e7f994-3b92-4f4a-acff-71d023e4e768_BX-302-JH2ebfe583-29c4-42fa-87ca-6307f84a78a3.jpg</Photo>
+    <DateFutureCT>28/04/2016 00:00:00</DateFutureCT>
+  </Voiture>
+  <Voiture>
+    <Immatriculation>BM-100-KP</Immatriculation>
+    <Marque>Mercedes</Marque>
+    <Modele>Class C</Modele>
+    <Kilometrage>105222</Kilometrage>
+    <Couleur>Bleu</Couleur>
+    <Carburant>Diesel</Carburant>
+    <Photo>AutoLocParisIcone_BM-100-KP_BM-100-KP.PNG</Photo>
+    <DateFutureCT>01/01/2019 00:00:00</DateFutureCT>
+  </Voiture>
+  <Voiture>
+    <Immatriculation>pn-963-NG</Immatriculation>
+    <Marque>Peugeot</Marque>
+    <Modele>408</Modele>
+    <Kilometrage>9632</Kilometrage>
+    <Couleur>Noir</Couleur>
+    <Carburant>Diesel</Carburant>
+    <Photo>AutoLocParisIcone.png</Photo>
+    <DateFutureCT>01/08/2016 00:00:00</DateFutureCT>
+  </Voiture>
+  <Voiture>
+    <Immatriculation>Bm-458-nk</Immatriculation>
+    <Marque>Volkswagen</Marque>
+    <Modele>Golf</Modele>
+    <Kilometrage>8596</Kilometrage>
+    <Couleur>Blanc</Couleur>
+    <Carburant>Diesel</Carburant>
+    <Photo>voiture1.jpg</Photo>
+    <DateFutureCT>01/01/2019 00:00:00</DateFutureCT>
+  </Voiture>
+  <Voiture>
+    <Immatriculation>KP-5668-BN</Immatriculation>
+    <Marque>Bently</Marque>
+    <Modele>ACablon</Modele>
+    <Kilometrage>45568</Kilometrage>
+    <Couleur>Noir</Couleur>
+    <Carburant>Diesel</Carburant>
+    <Photo>voiture1_KP-5668-BN_KP-5668-BN7be5d980-c81c-4918-8761-97da8217298c.jpg</Photo>
+    <DateFutureCT>31/12/2016 00:00:00</DateFutureCT>
   </Voiture>
 </Voitures>

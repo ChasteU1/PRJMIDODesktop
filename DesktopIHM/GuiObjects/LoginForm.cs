@@ -22,11 +22,12 @@ namespace DesktopIHM
         #region databinding
         protected override void OnLoad(EventArgs e)
         {
+           
             base.OnLoad(e);
             login.DataBindings.Add ("Text", _presenter, "Email");
             password.DataBindings.Add("Text", _presenter, "MotDePasse");
             erreurAuthentifiaction.DataBindings.Add("Text", _presenter, "ErreurAuthentification"); 
-            // dataGridView1.DataBindings.Add("DataSource", _presenter, "AllClients", false, DataSourceUpdateMode.OnPropertyChanged);
+          
 
         }
 
@@ -55,7 +56,7 @@ namespace DesktopIHM
         {
             this.Close();
         }
-
+       
        
     }
 }

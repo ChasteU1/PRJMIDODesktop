@@ -26,7 +26,7 @@ namespace DesktopIHM
             InitUnityContainer();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainView());
+            Application.Run(new LoginForm());
         }
 
         // Init unityContainer pour le IOC
