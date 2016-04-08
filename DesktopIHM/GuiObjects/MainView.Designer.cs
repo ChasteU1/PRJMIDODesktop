@@ -34,6 +34,7 @@ namespace GuiObjects.DesktopIHM
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabClients = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -176,13 +177,14 @@ namespace GuiObjects.DesktopIHM
             this.rechercheSalarieButton = new System.Windows.Forms.Button();
             this.rechercheSalarieText = new System.Windows.Forms.TextBox();
             this.salarieRechercheCritere = new System.Windows.Forms.CheckedListBox();
-            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
-            this.label25 = new System.Windows.Forms.Label();
             this.contratAlertListGrid = new System.Windows.Forms.DataGridView();
+            this.label25 = new System.Windows.Forms.Label();
             this.voitureAlertListGrid = new System.Windows.Forms.DataGridView();
             this.label44 = new System.Windows.Forms.Label();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.tabClients.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -1886,10 +1888,6 @@ namespace GuiObjects.DesktopIHM
             this.salarieRechercheCritere.Size = new System.Drawing.Size(1245, 21);
             this.salarieRechercheCritere.TabIndex = 0;
             // 
-            // openFileDialog
-            // 
-            this.openFileDialog.FileName = "openFileDialog";
-            // 
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.splitContainer4);
@@ -1921,15 +1919,6 @@ namespace GuiObjects.DesktopIHM
             this.splitContainer4.SplitterDistance = 375;
             this.splitContainer4.TabIndex = 0;
             // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(5, 21);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(182, 17);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "Liste des contrats en retard";
-            // 
             // contratAlertListGrid
             // 
             this.contratAlertListGrid.AllowUserToAddRows = false;
@@ -1945,6 +1934,15 @@ namespace GuiObjects.DesktopIHM
             this.contratAlertListGrid.Size = new System.Drawing.Size(1261, 322);
             this.contratAlertListGrid.TabIndex = 1;
             this.contratAlertListGrid.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.contratAlertListGrid_DataBindingComplete);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(5, 21);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(182, 17);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "Liste des contrats en retard";
             // 
             // voitureAlertListGrid
             // 
@@ -1970,6 +1968,16 @@ namespace GuiObjects.DesktopIHM
             this.label44.Size = new System.Drawing.Size(257, 17);
             this.label44.TabIndex = 2;
             this.label44.Text = "Liste des Contrôles technniques à venir";
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 5000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // MainView
             // 
@@ -2203,6 +2211,7 @@ namespace GuiObjects.DesktopIHM
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.DataGridView voitureAlertListGrid;
         private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

@@ -29,7 +29,7 @@ namespace DesktopIHM
             Application.Run(new MainView());
         }
 
-        // Init unityContainer
+        // Init unityContainer pour le IOC
         public static IUnityContainer myContainer;
         private static void InitUnityContainer()
         {

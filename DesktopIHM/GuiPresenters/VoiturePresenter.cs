@@ -217,7 +217,7 @@ namespace DesktopIHM.GuiPresenters
             v.Kilometrage = this.Kilometrage;
             v.Marque = this.Marque;
             v.Modele = this.Modele;
-            v.Photo = this.Photo = this.Photo.Split('.')[0] + "_" + this.Immatriculation + "." + this.Photo.Split('.')[1];
+            v.Photo = this.Photo = this.Photo.Split('.')[0] + "_" + this.Immatriculation + Guid.NewGuid() +"." + this.Photo.Split('.')[1];
             Img.Save(this.PicReb + v.Photo);
             _allVoitures = new BindingList<Voiture>(_allVoitures);
             voitureService.Update(v, "Immatriculation");

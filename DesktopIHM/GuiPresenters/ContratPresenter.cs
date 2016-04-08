@@ -338,7 +338,7 @@ namespace DesktopIHM.GuiPresenters
             ClearData();
             RaisePropertyChanged("AllContrats");
         }
-        public void UpdateClient()
+        public void UpdateContrat()
         {
             if (_allContrats == null || NumContrat == 0)
             {
@@ -395,8 +395,8 @@ namespace DesktopIHM.GuiPresenters
             AllContrats = new BindingList<Contrat>(contratService.SelectAll());
             AllClients = new BindingList<Client>(clientService.SelectAll());
             AllVoitures = new BindingList<Voiture>(voitureService.SelectAll());
-            AllClients.Insert(0, new Client { IdClient = 0, Nom = "", Prenom = "-" }); //empty row for the inti combo
-            AllVoitures.Insert(0, new Voiture { Immatriculation = "", Marque=""}); //empty row for the inti combo
+            AllClients.Insert(0, new Client { IdClient = 0, Nom = "", Prenom = "" }); //empty row for the inti combo
+            AllVoitures.Insert(0, new Voiture { Immatriculation = "0", Marque=""}); //empty row for the inti combo
         }
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -456,7 +456,7 @@ namespace DesktopIHM.GuiPresenters
 
        public void getAllAlertedContrat()
         {
-            AllAlertedContrats = new BindingList<Contrat>(contratService.getFullContratData().Where(x => x.DateRetour == null && x.DateFin<=DateTime.Now).ToList());
+            AllAlertedContrats = new BindingList<Contrat>(contratService.getFullContratData().Where(x => x.DateRetour== null && x.DateFin<=DateTime.Now).ToList());
         }
         private void ClearData()
         {
@@ -468,6 +468,16 @@ namespace DesktopIHM.GuiPresenters
             this.TarifContrat = 0f;
             this.DateRetourContrat = new DateTime();
             this.IsReturned = false;
+            this.NomContrat = "";
+            this.PrenomContrat = "";
+            this.EmailContrat = "";
+            this.NomSocieteContrat = "";
+            this.CodeIbanContrat = "";
+            this.ModeleVoitureContrat = "";
+            this.MarqueVoitureContrat = "";
+            this.CarburantVoitureContrat = "";
+            this.CouleurVoitureContrat = "";
+            this.KilometrageVoitureContrat = 0;
         
         }
     }
